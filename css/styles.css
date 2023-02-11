@@ -506,7 +506,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     
 }
 .input-field{
-    margin-bottom: 26px;
+    margin-bottom: 8px;
 }
 .input-wrap{
     position: relative;
@@ -516,13 +516,20 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    
+    outline: transparent;
+    padding-left: 38px;
+}
+.modal-input:focus, .modal-comment:focus{
+    border: 1px solid #4D5AE5;
+}
+.modal-input:focus + .modal-input-icon{
+    fill: #4D5AE5;
 }
 .modal-input-icon{
     position: absolute;
     left: 19px;
-top: 50%;
-transform: translateY(-50%);
+    top: 50%;
+    transform: translateY(-50%);
 }
 .modal-input-text span {
     font-weight: 400;
@@ -531,6 +538,32 @@ transform: translateY(-50%);
     color: #8E8F99;
     margin-bottom: 4px;
     display: block;
+}
+
+.modal-comment{
+    width: 360px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: transparent;
+    padding: 8px 16px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: rgba(117, 117, 117, 0.5);
+    resize: none;
+}
+.modal-input::placeholder,
+.modal-comment::placeholder {
+    font-size: 12px;
+}
+.modal-input:not(:focus):not(:placeholder-shown):valid {
+    background-color: rgba(118, 192, 43, 0.472);
+}
+
+.modal-input:not(:focus):not(:placeholder-shown):invalid {
+    background-color: rgba(221, 95, 37, 0.472);
 }
 .button-submit{
     font-family: 'Roboto', sans-serif;
