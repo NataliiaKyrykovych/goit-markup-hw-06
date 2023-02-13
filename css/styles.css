@@ -541,7 +541,6 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     transform: translate(-50%, -50%) scale(0) rotate(90deg);
 }
 .modal-close{
-    
     width: 24px;
     height: 24px;
     background-color: #E7E9FC;
@@ -550,6 +549,12 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     display: block;
     margin-left: auto;
     margin-bottom: 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close:is(:hover, :focus){
+    background: #404BBF;
+    fill: #FFFFFF;
 }
 .modal-title{
     font-weight: 500;
