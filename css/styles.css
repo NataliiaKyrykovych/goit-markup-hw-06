@@ -147,7 +147,7 @@ img {
 }
 .footer-container{
     display: flex;
-    gap: 120px;
+    /* gap: 100px; */
     margin: 0 auto;
 }
 .text-footer {
@@ -172,7 +172,12 @@ img {
     /* padding: 8px 16px; */
     color: rgba(255, 255, 255, 0.6);
 }
-    
+.logo-footer-div{
+    margin-right: 120px;
+}
+.social-media{
+    margin-right: 80px;
+}
 .subscribe {
     display: flex;
     gap: 24px;
@@ -210,6 +215,7 @@ img {
     background: #4D5AE5;
     fill: #FFFFFF;
 }
+
 /* ==============/Components================ */
 
 
@@ -255,6 +261,7 @@ img {
     margin: 0 auto;
     display: block;
     padding: 16px 32px;
+    border-color: transparent;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -506,7 +513,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     line-height: 1.5;
     letter-spacing: var(--letter-spacing);
     color: #FFFFFF;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 .soc-list-footer{
     gap: 16px;
@@ -631,13 +638,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 .modal-comment::placeholder {
     font-size: 12px;
 }
-.modal-input:not(:focus):not(:placeholder-shown):valid {
-    background-color: rgba(118, 192, 43, 0.472);
-}
 
-.modal-input:not(:focus):not(:placeholder-shown):invalid {
-    background-color: rgba(221, 95, 37, 0.472);
-}
 .check-text {
     font-size: 12px;
     font-weight: 400;
